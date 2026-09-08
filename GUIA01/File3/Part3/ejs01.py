@@ -1,0 +1,11 @@
+# Resolver: 
+# Ejercicio 1: Identifica el tipo de dato (int, float, string o list) 
+#                   de los siguientes valores literales:(recomendado)⭐
+"""
+"Hola Mundo"        = String    
+[1, 10, 100]        = list
+-25                 = int
+1.167               = float
+["Hola", "Mundo"]   = list
+' '                 = string
+"""
