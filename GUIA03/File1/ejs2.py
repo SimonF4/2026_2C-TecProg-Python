@@ -1,11 +1,11 @@
 # 2) Tabla de multiplicar: pedir un número y mostrar su tabla del 1 al 10.
 
-num = input( "Ingrese un numero:" )
+num = int(input( "Ingrese un numero:" ))
 
 i = 1
-fin = 10
+FIN = 10
 
-for i in range( i, fin+1) :
+for i in range( i, (FIN+1)) :
     multActual = num * i
 
     print(f"{num} * {i} = {multActual}")
@@ -26,4 +26,28 @@ print("Fin del Programa.")
 # 3 * 10 = 3333333333
 # Fin del Programa.
 
+# rta: andaba mal pq me comi el casteo del ingreso en la 1er linea.
+
 # Test 02:
+# Ingrese un numero:1
+# 1
+# 1 * 1 = 1
+# 2
+# 1 * 2 = 2
+# 3
+# 1 * 3 = 3
+# 4
+# 1 * 4 = 4
+# 5
+# 1 * 5 = 5
+# 6
+# 1 * 6 = 6
+# 7
+# 1 * 7 = 7
+# 8
+# 1 * 8 = 8
+# 9
+# 1 * 9 = 9
+# 10
+# 1 * 10 = 10
+# Fin del Programa.
