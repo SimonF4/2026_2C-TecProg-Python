@@ -1,4 +1,4 @@
-# 3) Contar positivos: ir pidiendo números hasta ingresar 0; mostrar cuántos fueron positivos.
+""" 3) Contar positivos: ir pidiendo números hasta ingresar 0; mostrar cuántos fueron positivos."""
 
 res = 0
 MSG_INGRESO = "Ingrese un numero o 0 para terminar el programa."
@@ -24,4 +24,3 @@ print(f"Resultado: Se ingresaron {res} numeros positivos.")
 # Ingrese un numero o 0 para terminar el programa.6
 # Ingrese un numero o 0 para terminar el programa.0
 # Resultado: Se ingresaron 2 numeros positivos.
-
