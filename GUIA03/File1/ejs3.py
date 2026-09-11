@@ -1,13 +1,14 @@
 # 3) Contar positivos: ir pidiendo números hasta ingresar 0; mostrar cuántos fueron positivos.
 
 res = 0
-num_ingresado = float(input("Ingrese un numero o 0 para terminar el programa."))
+MSG_INGRESO = "Ingrese un numero o 0 para terminar el programa."
+num_ingresado = float(input(MSG_INGRESO))
 
 while ( num_ingresado != 0 ) :
     if ( num_ingresado > 0 ):
         res += 1
 
-    num_ingresado = float(input("Ingrese un numero o 0 para terminar el programa."))
+    num_ingresado = float(input(MSG_INGRESO))
 
 print(f"Resultado: Se ingresaron {res} numeros positivos.")
 
