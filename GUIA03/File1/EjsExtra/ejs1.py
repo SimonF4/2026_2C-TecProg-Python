@@ -7,6 +7,12 @@ operacion = input(
     "Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)")
 resultado = 0
 
+# Para agregarle algo de bucles al ejs.
+while ( operacion != "+" ) or ( operacion != "-" ) or ( operacion != "*" ) or( operacion != "/" ):
+    operacion = input( 
+        "Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)")
+
+
 
 
 
