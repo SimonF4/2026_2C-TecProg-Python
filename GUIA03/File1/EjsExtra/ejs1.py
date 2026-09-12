@@ -8,7 +8,7 @@ operacion = input(
 resultado = 0
 
 # Para agregarle algo de bucles al ejs.
-while ( operacion != "+" ) or ( operacion != "-" ) or ( operacion != "*" ) or( operacion != "/" ):
+while ( operacion != "+" ) and ( operacion != "-" ) and ( operacion != "*" ) and ( operacion != "/" ):
     operacion = input( 
         "Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)")
 
@@ -33,3 +33,24 @@ else:
 print(f"El resultado de la {operacion} entre {num1} y {num2} es = {resultado}")
 
 # TESTING:
+
+# TEST 01:  Trabado en el ingreso. Motivo: era con and y no or el condicional del while.
+# Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)+
+# Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)+
+
+# TEST 02: 
+# Ingrese el 1er numero: 1
+# Ingrese el 2do numero: 2
+# Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)1
+# Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)0
+# Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /).
+# Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /);
+# Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)/
+# El resultado de la / entre 1.0 y 2.0 es = 0.5
+
+# TEST con division por 0:
+# Ingrese el 1er numero: 1
+# Ingrese el 2do numero: 0
+# Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)/
+# ERROR, no se puede dividir por 0.
+# El resultado de la / entre 1.0 y 0.0 es = 0
