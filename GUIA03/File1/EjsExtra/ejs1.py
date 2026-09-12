@@ -3,10 +3,11 @@ Validar división por cero."""
 
 num1 = float(input("Ingrese el 1er numero: "))
 num2 = float(input("Ingrese el 2do numero: "))
-
 operacion = input(
-    "Ingrese la operacion a realizar: suma, resta, multiplicacion y dividision (+, -, *, /)")
+    "Ingrese la operacion a realizar: suma, resta, multiplicacion y division (+, -, *, /)")
+resultado = 0
 
 
 
-if ( operacion != 0 ) :
+
+print(f"El resultado de la {operacion} entre {num1} y {num2} es = {resultado}")
