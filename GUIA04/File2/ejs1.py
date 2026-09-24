@@ -48,6 +48,7 @@ print(amigos[::-1])  # Resultado = "['Jessi', 'Luis', 'Jose', 'Ana']"
 
 print("****** TEST para ver si te hace una copia o te modifica la lista original: **********")
 nuevaList = amigos[::-1]
+# Sort = ordenar la lista. Para compararla con la lista invertida.
 amigos.sort()
 
 print("Lista amigos: ", amigos) # Resultado = "Lista amigos:  ['Ana', 'Jose', 'Luis', 'Jessi']"
