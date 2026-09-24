@@ -7,3 +7,10 @@
         y mostrar.
 """
 
+nombres = []
+nombre = None
+
+while (nombre != "FIN"):
+    
+    
+
