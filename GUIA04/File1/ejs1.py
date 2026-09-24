@@ -11,6 +11,7 @@ nombres = []
 nombre = None
 
 while (nombre != "FIN"):
-    
+    nombre = input( "Ingrese los nombres. Ingrese FIN para dejar de ingresar alumnos." )
+    nombres.append(nombre)
     
 
