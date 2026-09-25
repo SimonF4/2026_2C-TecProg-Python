@@ -6,13 +6,16 @@
     Luego ordenar 
         y mostrar.
 """
+# No incluye validaciones por 0.
 
 nombres = []
-nombre = None
+nombre = input( "Ingrese los nombres. Ingrese FIN para dejar de ingresar alumnos." )
 
-while (nombre != "FIN"):
-    nombre = input( "Ingrese los nombres. Ingrese FIN para dejar de ingresar alumnos." )
+# .upper() = detalle para q tome tmb "fin" en minuscula.
+while (nombre.upper() != "FIN"):
     nombres.append(nombre)
+    nombre = input( "Ingrese los nombres. Ingrese FIN para dejar de ingresar alumnos." )
+    #if (nombre != "FIN"): #Era para q no me sume el ultimo (FIN) a la lista. No es necesario si pongo el append() primero y un input fuera del bucle.
     
 print(f"Cantidad de alumnos ingresados = {len(nombres)}")
 print(f"Primer alumno ingresado = {nombres[0]}")
@@ -21,6 +24,7 @@ print(f"Ultimo alumno ingresado = {nombres[-1]}")
 # Ordenar = sort
 nombres.sort()
 print(f"Lista de alumnos ordenada = {nombres}")
+
 
 # TESTING:
 # TEST 01:
