@@ -20,6 +20,7 @@ PRECIO_CORTE = -1
 STOCK_CORTE = -1
 
 while(precio != PRECIO_CORTE and stock != STOCK_CORTE):
+    producto = (input("Ingrese el nombre del producto."))
     precio = float(input("Ingrese el precio (valor) del producto."))
     stock = int(input("Ingrese el stock (cantidad) del producto."))
 
@@ -27,7 +28,7 @@ while(precio != PRECIO_CORTE and stock != STOCK_CORTE):
     # producto ["precio", "stock"] = {precio, stock}
     # diccionario [producto] = producto ["precio", "stock"]
     # En una linea seria: 
-    diccionario [producto] = {"precio": precio, "stock": stock}
+    diccionario ["producto"] = {"precio": precio, "stock": stock}
 
     # "Mostrar total del stock "    
     total_stock += 1
@@ -53,4 +54,18 @@ print(f"--- el producto más caro = {total_stock} ---")
 # TypeError: unhashable type: 'dict'
 
 # TEST 02:
+# Ingrese el nombre del producto.papa
+# Ingrese el precio (valor) del producto.100
+# Ingrese el stock (cantidad) del producto.2
+# Ingrese el nombre del producto.batata
+# Ingrese el precio (valor) del producto.200
+# Ingrese el stock (cantidad) del producto.3
+# Ingrese el nombre del producto.fin
+# Ingrese el precio (valor) del producto.-1
+# Ingrese el stock (cantidad) del producto.-1
+# --- RESULTADOS ---
+# --- total del stock = batata ---
+# --- el producto más caro = 3 ---
+
+# TEST 03:
 
