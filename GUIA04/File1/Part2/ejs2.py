@@ -33,6 +33,7 @@ for nombre in lista_1:
 
 print(conjunto)
 lista_limpia = list(conjunto)
+# sorted() para ordenar la lista pq sino me quedaba desordenada.
 lista_limpia = sorted(lista_limpia)
 
 print("Lista limpia resultante = ", lista_limpia)
