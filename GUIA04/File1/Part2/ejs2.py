@@ -33,6 +33,7 @@ for nombre in lista_1:
 
 print(conjunto)
 lista_limpia = list(conjunto)
+lista_limpia = sorted(lista_limpia)
 
 print("Lista limpia resultante = ", lista_limpia)
 
@@ -56,3 +57,21 @@ print("Lista limpia resultante = ", lista_limpia)
 # {'Nombre1', 'Nombre3', 'Nombre2'}
 # Lista limpia resultante =  ['Nombre1', 'Nombre3', 'Nombre2']
 
+# TEST 02:
+#     nombre1
+# nombreLimpio: nombre1
+# nombre en forma title: Nombre1
+#  nombre1      
+# nombreLimpio: nombre1
+# nombre en forma title: Nombre1
+#  nombre2 
+# nombreLimpio: nombre2
+# nombre en forma title: Nombre2
+# nombre2 
+# nombreLimpio: nombre2
+# nombre en forma title: Nombre2
+# nombre3
+# nombreLimpio: nombre3
+# nombre en forma title: Nombre3
+# {'Nombre2', 'Nombre3', 'Nombre1'}
+# Lista limpia resultante =  ['Nombre1', 'Nombre2', 'Nombre3']
