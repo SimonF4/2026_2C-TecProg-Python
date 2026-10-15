@@ -16,10 +16,12 @@ Ejercicio 1
 """
 
 def area_rectangulo(base, altura):
-
-
-    return 0
+    return base * altura
 
 base = 15
 altura = 10
 print(f"El area de un rectangulo de base {base} y altura {altura} es = {area_rectangulo(base, altura)}")
+
+# TESTING:
+# TEST 01: bien.
+# El area de un rectangulo de base 15 y altura 10 es = 150
