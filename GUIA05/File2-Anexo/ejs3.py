@@ -17,3 +17,11 @@ El área de un círculo se obtiene al
             3.141592653589793
 """
 
+def area_circulo(radio):
+
+    return 0
+
+
+
+radio = 5
+print(f"El area de un circulo de radio {radio} es = {area_circulo(radio)}")
