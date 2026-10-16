@@ -95,9 +95,18 @@ def es_palindromo_solucion1_acortada(palabra):
     
     return resultado
 
+# Resolucion de vitto en clase (15/10/2026):
+def es_palindromo_solucion2_15102026(palabra):
+    palabra = palabra.replace(" ", "").lower()
+    # Directamente compara las 2 listas enteras si dan el mismo resultado. En vez de ir comparando letra por letra (q es algo q igual debe hacer internamente esto).
+    if palabra == palabra[::-1]:
+        return True
+    else:
+        return False
 
 print(f"Es palindromo la palabra '{palabra}'? Resultado = {es_palindromo_solucion1_completa(palabra)}")
 print(f"(version metodo acortado) Es palindromo la palabra '{palabra}'? Resultado = {es_palindromo_solucion1_acortada(palabra)}")
+print(f"(version 2 del metodo) Es palindromo la palabra '{palabra}'? Resultado = {es_palindromo_solucion2_15102026(palabra)}")
 
 # TESTING:
 # TEST 01:
