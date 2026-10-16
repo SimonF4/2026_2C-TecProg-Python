@@ -9,7 +9,7 @@ Ejercicios obligatorios
 
 palabra = input("Ingrese un texto a evaluar si es palindromo.")
 
-def es_palindromo(palabra):
+def es_palindromo_solucion1_completa(palabra):
     resultado = True
     # Limpiamos/Normalizamos el ingreso por teclado del usuario.
     palabra_limpia = palabra.replace(" ", "").lower()
@@ -22,12 +22,13 @@ def es_palindromo(palabra):
 
     # TESTING: len()
     print("Tamanio lista = ", len(palabra_list))               # 5
-    print("Tamanio lista /2 = ", int(len(palabra_list)/2))     # 2
+    tamanio_mitad_de_lista = int(len(palabra_list)/2)
+    print("Tamanio lista /2 = ", tamanio_mitad_de_lista)       # 2
 
     # Para separar en 2 mitades el texto.
     # TESTING: list -> slicing
     # mitad1 = palabra_list[::int(len(palabra_list)/2)] # ['t', 'x', 'o']
-    mitad1 = palabra_list[:int(len(palabra_list)/2)]    # ['t', 'e']
+    mitad1 = palabra_list[:tamanio_mitad_de_lista]    # ['t', 'e']
     print("1ra mitad = ", mitad1)
     # mitad2 = palabra_list_inv[::int(len(palabra_list_inv)/2)] # ['o', 'x', 't']
     mitad2 = palabra_list_inv[:int(len(palabra_list_inv)/2)]    # ['o', 't']
@@ -35,32 +36,38 @@ def es_palindromo(palabra):
 
     i = 0
     j = 0
+    print("resultado == True: ", resultado == True) # Testing de booleanos en .py.
     # for i in range(0, len(palabra_list)):
-    print("resultado == True: ", resultado == True)
-    while (i < (len(palabra_list))) and (resultado == True):
-        print(" Contador i = ", i)
-        print(" Contador j = ", j)
-        
-        palabra_actual = palabra_list[i]
-        print("     Palabra actual = ", palabra_actual)
-        palabra_inv_actual = palabra_list_inv[j]
-        print("     Palabra actual lectura inversa = ", palabra_inv_actual)
 
-        if( palabra_actual == palabra_inv_actual):
-            resultado = True
-        else:
-            resultado = False
-         
-        print("     Resultado de la comparacion = ", resultado)
+    print("Mitad 1, letra media/divisora = ", palabra_list[tamanio_mitad_de_lista])
+    print("Mitad 2, letra media/divisora = ", palabra_list_inv[tamanio_mitad_de_lista])
+    if( palabra_list[tamanio_mitad_de_lista] == palabra_list_inv[tamanio_mitad_de_lista]):
+        while (i < (tamanio_mitad_de_lista)) and (resultado == True):
+            print(" Contador i = ", i)
+            print(" Contador j = ", j)
 
-        # Para poder seguir recorriendo:
-        j += 1
-        i += 1
+            palabra_actual = palabra_list[i]
+            print("     Palabra actual = ", palabra_actual)
+            palabra_inv_actual = palabra_list_inv[j]
+            print("     Palabra actual lectura inversa = ", palabra_inv_actual)
 
+            if( palabra_actual == palabra_inv_actual):
+                resultado = True
+            else:
+                resultado = False
+
+            print("     Resultado de la comparacion = ", resultado)
+
+            # Para poder seguir recorriendo:
+            j += 1
+            i += 1
+    else:
+        resultado = False
+    
     return resultado
 
 
-print(f"Es palindromo la palabra '{palabra}'? Resultado = {es_palindromo(palabra)}")
+print(f"Es palindromo la palabra '{palabra}'? Resultado = {es_palindromo_solucion1_completa(palabra)}")
 
 # TESTING:
 # TEST 01:
@@ -147,3 +154,35 @@ print(f"Es palindromo la palabra '{palabra}'? Resultado = {es_palindromo(palabra
 #      Palabra actual lectura inversa =  n
 #      Resultado de la comparacion =  True
 # Es palindromo la palabra 'Neu quen'? Resultado = True
+
+# TEST 05:
+# Ingrese un texto a evaluar si es palindromo.neU quen
+# ['n', 'e', 'u', 'q', 'u', 'e', 'n']
+# ['n', 'e', 'u', 'q', 'u', 'e', 'n']
+# Tamanio lista =  7
+# Tamanio lista /2 =  3
+# 1ra mitad =  ['n', 'e', 'u']
+# 2da mitad =  ['n', 'e', 'u']
+# resultado == True:  True
+# Mitad 1, letra media/divisora =  q
+# Mitad 2, letra media/divisora =  q
+#  Contador i =  0
+#  Contador j =  0
+#      Palabra actual =  n
+#      Palabra actual lectura inversa =  n
+#      Resultado de la comparacion =  True
+#  Contador i =  1
+#  Contador j =  1
+#      Palabra actual =  e
+#      Palabra actual lectura inversa =  e
+#      Resultado de la comparacion =  True
+#  Contador i =  2
+#  Contador j =  2
+#      Palabra actual =  u
+#      Palabra actual lectura inversa =  u
+#      Resultado de la comparacion =  True
+# Es palindromo la palabra 'neU quen'? Resultado = True
+
+# TEST 06:
+# Anita lava la tina
+# Resultado = True
