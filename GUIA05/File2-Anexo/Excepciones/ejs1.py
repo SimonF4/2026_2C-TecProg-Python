@@ -7,3 +7,13 @@ resultado = 10/0
 
 """
 
+# resultado = 10/0
+# RESULTADO: 
+# "
+# Traceback (most recent call last):
+#   File "c:\Users\Yo\PROYECTOS\CFP11\Python\GUIA05\File2-Anexo\Excepciones\ejs1.py", line 10, in <module>
+#     resultado = 10/0
+#                 ~~^~
+# ZeroDivisionError: division by zero
+# "
+
