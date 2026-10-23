@@ -21,11 +21,15 @@ colores['blanco']
 try:
     colores = { 'rojo':'red', 'verde':'green', 'negro':'black' }
     buscado = 'blanco'
+    # Manejo con uso de get
+    print(colores.get(buscado, "ERROR, no se encontro"))
     colores[buscado]
 
-except KeyError:
+except KeyError as e:
     print(f"ERROR. No existe la clave {buscado} en el diccionario de colores actual.")
     print(f"La lista de colores solo tiene lo siguiente: {colores}")
+    # Metodos de excepcion:
+    print("Tipo de error: ", type(e))
 
 else:
     print("Todo ha funcionado correctamente")
