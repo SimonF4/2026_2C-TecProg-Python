@@ -19,3 +19,15 @@ lista[10]
 #     ~~~~~^^^^
 # IndexError: list index out of range
 
+try: 
+    lista = [1, 2, 3, 4, 5]
+    lista[10]
+
+except IndexError: 
+    print("ERROR, se intentó acceder a un valor inexistente de la lista.")
+else:
+    print("Todo ha funcionado correctamente")
+
+# TESTs:
+# TEST 01:
+# ERROR, se intentó acceder a un valor inexistente de la lista.
