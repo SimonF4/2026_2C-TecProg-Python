@@ -7,7 +7,7 @@ Ejercicios obligatorios
                     (ignorar espacios y mayúsculas).
 """
 
-palabra = input("Ingrese un texto a evaluar si es palindromo.")
+palabraIngresada = input("Ingrese un texto a evaluar si es palindromo.")
 
 def es_palindromo_solucion1_completa(palabra):
     resultado = True
@@ -104,9 +104,9 @@ def es_palindromo_solucion2_15102026(palabra):
     else:
         return False
 
-print(f"Es palindromo la palabra '{palabra}'? Resultado = {es_palindromo_solucion1_completa(palabra)}")
-print(f"(version metodo acortado) Es palindromo la palabra '{palabra}'? Resultado = {es_palindromo_solucion1_acortada(palabra)}")
-print(f"(version 2 del metodo) Es palindromo la palabra '{palabra}'? Resultado = {es_palindromo_solucion2_15102026(palabra)}")
+print(f"Es palindromo la palabra '{palabraIngresada}'? Resultado = {es_palindromo_solucion1_completa(palabraIngresada)}")
+print(f"(version metodo acortado) Es palindromo la palabra '{palabraIngresada}'? Resultado = {es_palindromo_solucion1_acortada(palabraIngresada)}")
+print(f"(version 2 del metodo) Es palindromo la palabra '{palabraIngresada}'? Resultado = {es_palindromo_solucion2_15102026(palabraIngresada)}")
 
 # TESTING:
 # TEST 01:
