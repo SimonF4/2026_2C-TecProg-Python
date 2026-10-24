@@ -10,6 +10,7 @@ Ejercicios obligatorios
 palabraIngresada = input("Ingrese un texto a evaluar si es palindromo.")
 
 def es_palindromo_solucion1_completa(palabra):
+    """Docstring: Funcion para evaluar si un String es o no palindromo."""
     resultado = True
     # Limpiamos/Normalizamos el ingreso por teclado del usuario.
     palabra_limpia = palabra.replace(" ", "").lower()
@@ -67,6 +68,8 @@ def es_palindromo_solucion1_completa(palabra):
     return resultado
 
 def es_palindromo_solucion1_acortada(palabra):
+    """Docstring: Funcion "es_palindromo_solucion1_completa" pero sin comentarios ni prints de testeo."""
+
     resultado = True
     
     palabra_limpia = palabra.replace(" ", "").lower()
@@ -97,6 +100,9 @@ def es_palindromo_solucion1_acortada(palabra):
 
 # Resolucion de vitto en clase (15/10/2026):
 def es_palindromo_solucion2_15102026(palabra):
+    """Docstring: Funcion "es_palindromo" pero hecha en clase del 15/10/2026. 
+        Utiliza multiple return y compara directamente las 2 listas."""
+
     palabra = palabra.replace(" ", "").lower()
     # Directamente compara las 2 listas enteras si dan el mismo resultado. En vez de ir comparando letra por letra (q es algo q igual debe hacer internamente esto).
     if palabra == palabra[::-1]:
