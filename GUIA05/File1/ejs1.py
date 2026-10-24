@@ -9,11 +9,11 @@ Ejercicios obligatorios
 
 palabraIngresada = input("Ingrese un texto a evaluar si es palindromo.")
 
-def es_palindromo_solucion1_completa(palabra):
+def es_palindromo_solucion1_completa(texto):
     """Docstring: Funcion para evaluar si un String es o no palindromo."""
     resultado = True
     # Limpiamos/Normalizamos el ingreso por teclado del usuario.
-    palabra_limpia = palabra.replace(" ", "").lower()
+    palabra_limpia = texto.replace(" ", "").lower()
 
     # Una opcion: usar slicer miLista[::-1] con el texto.
     palabra_list = list(palabra_limpia)
@@ -67,12 +67,12 @@ def es_palindromo_solucion1_completa(palabra):
     
     return resultado
 
-def es_palindromo_solucion1_acortada(palabra):
+def es_palindromo_solucion1_acortada(texto):
     """Docstring: Funcion "es_palindromo_solucion1_completa" pero sin comentarios ni prints de testeo."""
 
     resultado = True
     
-    palabra_limpia = palabra.replace(" ", "").lower()
+    palabra_limpia = texto.replace(" ", "").lower()
 
     palabra_list = list(palabra_limpia)
     palabra_list_inv = palabra_list[::-1]
