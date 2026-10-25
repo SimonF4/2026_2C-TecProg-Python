@@ -14,6 +14,8 @@ La función debe seguir las siguientes reglas:
 """
 
 def fizz_buzz (a):
+    """ Docstring: Metodo fizz_buzz, recibe un número entero como entrada. """
+
     resu = 0
 
     if ( (a % 5 == 0) and (a % 3 == 0) ):
@@ -25,6 +27,8 @@ def fizz_buzz (a):
     else:
         resu = a
 
+    return resu
+
 a = input("Escriba un número a evaluar.")
 print( fizz_buzz(a) )
 
@@ -33,6 +37,8 @@ print( fizz_buzz(a) )
 a = input("Escriba un número a evaluar.")
 
 def fizz_buzz_v2 (a):
+    """ Docstring: fizz_buzz version 2. Se elimino la repeticion del codigo en las validaciones."""
+
     resu  = a
     div_5 = (a % 5 == 0)
     div_3 = (a % 3 == 0)
@@ -45,5 +51,11 @@ def fizz_buzz_v2 (a):
         resu = "Fizz"
     else:
         resu = a
-  
+
+    return resu
+
 print( fizz_buzz_v2(a) )
+
+# TESTING:
+# TEST 01:
+
