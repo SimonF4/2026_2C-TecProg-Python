@@ -13,4 +13,37 @@ La función debe seguir las siguientes reglas:
 
 """
 
+def fizz_buzz (a):
+    resu = 0
 
+    if ( (a % 5 == 0) and (a % 3 == 0) ):
+        resu = "FizzBuzz"
+    elif (a % 5 == 0):
+        resu = "Buzz"
+    elif (a % 3 == 0):
+        resu = "Fizz"
+    else:
+        resu = a
+
+a = input("Escriba un número a evaluar.")
+print( fizz_buzz(a) )
+
+
+# Opcion2:
+a = input("Escriba un número a evaluar.")
+
+def fizz_buzz_v2 (a):
+    resu  = a
+    div_5 = (a % 5 == 0)
+    div_3 = (a % 3 == 0)
+
+    if ( div_5 and div_3 ):
+        resu = "FizzBuzz"
+    elif div_5:
+        resu = "Buzz"
+    elif div_3: 
+        resu = "Fizz"
+    else:
+        resu = a
+  
+print( fizz_buzz_v2(a) )
