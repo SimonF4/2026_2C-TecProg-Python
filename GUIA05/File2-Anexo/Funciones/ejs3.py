@@ -22,6 +22,7 @@ print( relacion(a,b) )
 
 """
 
+# EJS DE LA CLASE 31 - 20/10/26.
 
 def relacion(a, b):
     resu = 0

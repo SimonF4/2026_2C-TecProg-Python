@@ -13,6 +13,8 @@ La función debe seguir las siguientes reglas:
 
 """
 
+# EJS DE LA CLASE 31 - 20/10/26.
+
 def fizz_buzz (a):
     """ Docstring: Metodo fizz_buzz, recibe un número entero como entrada."""
 
