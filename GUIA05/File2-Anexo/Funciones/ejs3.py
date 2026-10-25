@@ -22,18 +22,37 @@ print( relacion(a,b) )
 
 """
 
+
 def relacion(a, b):
     resu = 0
-    
-    if(a > b):
+
+    if (a > b):
         resu = 1
 
-    elif(a < b):
+    elif (a < b):
         resu = -1
-    
-    else: 
+
+    else:
         resu = 0
+
+    print("Resultados:" \
+    "\n     +1 = Si el primer número es mayor que el segundo" \
+    "\n     -1 = Si el primer número es menor que el segundo" \
+    "\n      0 = Si ambos números son iguales")
+    return f"El resultado de la relacion es = {resu}"
+
 
 a = input("Ingrese un primer numero")
 b = input("Ingrese un segundo numero")
-print( relacion(a,b) )
+print(relacion(a, b))
+
+# TESTING:
+# TEST 01:
+# Ingrese un primer numero1
+# Ingrese un segundo numero2
+# Resultados:
+#      +1 = Si el primer número es mayor que el segundo
+#      -1 = Si el primer número es menor que el segundo
+#       0 = Si ambos números son iguales
+# El resultado de la relacion es = -1
+
