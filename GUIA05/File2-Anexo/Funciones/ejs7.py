@@ -40,7 +40,7 @@ a = (int) (input("Escriba un número a evaluar."))
 def fizz_buzz_v2 (a):
     """ Docstring: fizz_buzz version 2. Se elimino la repeticion del codigo en las validaciones."""
 
-    resu  = a
+    resu = f"{a} no es divisible por 5 o por 3."
     div_5 = (a % 5 == 0)
     div_3 = (a % 3 == 0)
 
@@ -50,8 +50,6 @@ def fizz_buzz_v2 (a):
         resu = "Buzz"
     elif div_3: 
         resu = "Fizz"
-    else:
-        resu = f"{a} no es divisible por 5 o por 3."
 
     return resu
 
