@@ -14,7 +14,7 @@ La función debe seguir las siguientes reglas:
 """
 
 def fizz_buzz (a):
-    """ Docstring: Metodo fizz_buzz, recibe un número entero como entrada. """
+    """ Docstring: Metodo fizz_buzz, recibe un número entero como entrada."""
 
     resu = 0
 
@@ -25,7 +25,7 @@ def fizz_buzz (a):
     elif (a % 3 == 0):
         resu = "Fizz"
     else:
-        resu = a
+        resu = f"{a} no es divisible por 5 o por 3."
 
     return resu
 
@@ -51,7 +51,7 @@ def fizz_buzz_v2 (a):
     elif div_3: 
         resu = "Fizz"
     else:
-        resu = a
+        resu = f"{a} no es divisible por 5 o por 3."
 
     return resu
 
@@ -80,4 +80,3 @@ print( fizz_buzz_v2(a) )
 # FizzBuzz
 # Escriba un número a evaluar.27
 # Fizz
-
