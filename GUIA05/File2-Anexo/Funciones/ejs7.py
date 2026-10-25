@@ -29,12 +29,13 @@ def fizz_buzz (a):
 
     return resu
 
-a = input("Escriba un número a evaluar.")
+a = (int) (input("Escriba un número a evaluar."))
 print( fizz_buzz(a) )
 
 
+# --------------------------
 # Opcion2:
-a = input("Escriba un número a evaluar.")
+a = (int) (input("Escriba un número a evaluar."))
 
 def fizz_buzz_v2 (a):
     """ Docstring: fizz_buzz version 2. Se elimino la repeticion del codigo en las validaciones."""
@@ -68,5 +69,15 @@ print( fizz_buzz_v2(a) )
 #           ~~^~~
 # TypeError: not all arguments converted during string formatting
 
-# TEST 02:
+# TEST 02: Bien.
+# Escriba un número a evaluar.7
+# 7
+# Escriba un número a evaluar.10
+# Buzz
+
+# TEST 03: Bien.
+# Escriba un número a evaluar.180
+# FizzBuzz
+# Escriba un número a evaluar.27
+# Fizz
 
