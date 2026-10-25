@@ -57,5 +57,16 @@ def fizz_buzz_v2 (a):
 print( fizz_buzz_v2(a) )
 
 # TESTING:
-# TEST 01:
+# TEST 01: Fallo pq puse mal el input.
+# Escriba un número a evaluar.7
+# Traceback (most recent call last):
+#   File "c:\Users\Yo\PROYECTOS\CFP11\Python\GUIA05\File2-Anexo\Funciones\ejs7.py", line 33, in <module>
+#     print( fizz_buzz(a) )
+#            ~~~~~~~~~^^^
+#   File "c:\Users\Yo\PROYECTOS\CFP11\Python\GUIA05\File2-Anexo\Funciones\ejs7.py", line 21, in fizz_buzz
+#     if ( (a % 5 == 0) and (a % 3 == 0) ):
+#           ~~^~~
+# TypeError: not all arguments converted during string formatting
+
+# TEST 02:
 
