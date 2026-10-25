@@ -21,3 +21,19 @@ print( relacion(a,b) )
 
 
 """
+
+def relacion(a, b):
+    resu = 0
+    
+    if(a > b):
+        resu = 1
+
+    elif(a < b):
+        resu = -1
+    
+    else: 
+        resu = 0
+
+a = input("Ingrese un primer numero")
+b = input("Ingrese un segundo numero")
+print( relacion(a,b) )
