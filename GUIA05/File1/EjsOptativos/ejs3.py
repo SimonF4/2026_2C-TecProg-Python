@@ -29,10 +29,12 @@ def parse_fecha(fecha_str):
     dias_restantes = fecha_venc_date - fecha_date
     print(dias_restantes)
 
+    # Se podria pasar a parte de este metodo, por exceso de funcionalidades. Pero el enunciado lo pide hacer todo en el mismo metodo.
+    # "Si ya venció, informar cuántos días pasaron."
     if(dias_restantes.days < 0):
-        resultado = f"Producto ya vencido {dias_restantes} por dias."
+        resultado = f"CUIDADO!!! Producto ya vencido hace {dias_restantes}."     # Resultado = te pone por ej.: "-67 days".
     else:
-        resultado = dias_restantes
+        resultado = f"El producto vencera dentro de {dias_restantes.days} dias." # Resultado = con .days te da solo el numero.
 
 
     return resultado
@@ -76,3 +78,10 @@ print(parse_fecha("01/01/2027"))
 # 2026-10-26 00:00:00
 # -67 days, 0:00:00
 # Producto ya vencido -67 days, 0:00:00 por dias.
+
+# TEST 04:
+# Ingrese una fecha de vencimiento:01/02/2030
+# 2027-01-01 00:00:00
+# 2030-02-01 00:00:00
+# 1127 days, 0:00:00
+# El producto vencera dentro de 1127 dias.
