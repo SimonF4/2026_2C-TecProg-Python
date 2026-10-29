@@ -17,10 +17,14 @@ import pytz
 
 # print(pytz.all_timezones)
 
+dt_arg = datetime.now(pytz.timezone('America/Argentina/Buenos_Aires')) 
+print(dt_arg.strftime("Argentina/Buenos Aires: %A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
+
+dt_ny = datetime.now(pytz.timezone('America/New_York'))
+print(dt_ny.strftime("America/New York: %A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
+
 dt = datetime.now(pytz.timezone('Asia/Tokyo'))
-print(dt.strftime("%A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
-
-
+print(dt.strftime("Asia/Tokyo: %A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
 
 # TESTING:
 # TEST 01: ERROR. No tiene el atributo .now(). SOLUCION: agregar el "from datetime" al import
@@ -32,4 +36,10 @@ print(dt.strftime("%A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
 
 # TEST 03:
 # Friday 30 de October del 2026 - 07:52
+
+# TEST 04:
+# Asia/Tokyo: Friday 30 de October del 2026 - 07:59
+# Argentina/Buenos Aires: Thursday 29 de October del 2026 - 19:59
+# America/New York: Thursday 29 de October del 2026 - 18:59
+
 
