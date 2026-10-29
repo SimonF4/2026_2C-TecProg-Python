@@ -20,7 +20,7 @@ print(dt_actual)  # Resultado = 2026-10-28 20:34:58.270186
 
 # strftime = Formateo manual (inglés por defecto):
 dt_actual_formateado = dt_actual.strftime(
-    "%A %d %B %Y %I:%M")  # Ejemplo: Saturday 18 June 2024 09:37
+    "%A %d de %B del %Y - %I:%M")  # Ejemplo: Saturday 18 June 2024 09:37
 print(dt_actual_formateado)
 
 # Idioma "es-ES" (código para el español de España)
@@ -40,3 +40,6 @@ print(dt_actual_formateado)
 # miércoles 28 octubre 2026 08:40
 # miércoles 28 octubre 2026 08:40
 
+# TEST 03: BIEN. Texto ahora si bien formateado como pide el ejs.
+# 2026-10-28 20:50:12.348427
+# miércoles 28 de octubre del 2026 - 08:50
