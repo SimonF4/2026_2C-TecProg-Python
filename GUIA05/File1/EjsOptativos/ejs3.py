@@ -29,7 +29,7 @@ def parse_fecha(fecha_str):
     dias_restantes = fecha_venc_date - fecha_date
     print(dias_restantes)
 
-    if(dias_restantes < 0):
+    if(dias_restantes.days < 0):
         resultado = f"Producto ya vencido {dias_restantes} por dias."
     else:
         resultado = dias_restantes
@@ -69,3 +69,10 @@ print(parse_fecha("01/01/2027"))
 #     if(dias_restantes < 0):
 #        ^^^^^^^^^^^^^^^^^^
 # TypeError: '<' not supported between instances of 'datetime.timedelta' and 'int'
+
+# TEST 03: BIEN.
+# Ingrese una fecha de vencimiento:26/10/2026
+# 2027-01-01 00:00:00
+# 2026-10-26 00:00:00
+# -67 days, 0:00:00
+# Producto ya vencido -67 days, 0:00:00 por dias.
