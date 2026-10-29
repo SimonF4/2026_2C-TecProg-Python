@@ -11,4 +11,17 @@ Pista: Usa el módulo pytz para asignar zonas horarias.
 
 """
 
+import datetime
+# pip install pytz : En consola, para instalar el pytz.
+import pytz
+
+# print(pytz.all_timezones)
+
+dt = datetime.now(pytz.timezone('Asia/Tokyo'))
+print(dt.strftime("%A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
+
+# TESTING:
+# TEST 01: ERROR. No tiene el atributo .now(). SOLUCION: agregar el "from datetime" al import
+
+
 
