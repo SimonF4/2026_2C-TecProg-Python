@@ -31,14 +31,17 @@ def parse_fecha(fecha_str):
 
     # Se podria pasar a parte de este metodo, por exceso de funcionalidades. Pero el enunciado lo pide hacer todo en el mismo metodo.
     # "Si ya venció, informar cuántos días pasaron."
+    resultado = evaluar_vencimiento(dias_restantes)
+
+    return resultado
+
+def evaluar_vencimiento(dias_restantes):
     if(dias_restantes.days < 0):
         resultado = f"CUIDADO!!! Producto ya vencido hace {dias_restantes}."     # Resultado = te pone por ej.: "-67 days".
     else:
         resultado = f"El producto vencera dentro de {dias_restantes.days} dias." # Resultado = con .days te da solo el numero.
 
-
     return resultado
-
 
 print(parse_fecha("01/01/2027"))
 
