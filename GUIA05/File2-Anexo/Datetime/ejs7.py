@@ -21,10 +21,10 @@ dt_arg = datetime.now(pytz.timezone('America/Argentina/Buenos_Aires'))
 print(dt_arg.strftime("Argentina/Buenos Aires: %A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
 
 dt_ny = datetime.now(pytz.timezone('America/New_York'))
-print(dt_ny.strftime("America/New York: %A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
+print(dt_ny.strftime("America/New York:       %A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
 
 dt = datetime.now(pytz.timezone('Asia/Tokyo'))
-print(dt.strftime("Asia/Tokyo: %A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
+print(dt.strftime("Asia/Tokyo:             %A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
 
 # TESTING:
 # TEST 01: ERROR. No tiene el atributo .now(). SOLUCION: agregar el "from datetime" al import
@@ -42,4 +42,10 @@ print(dt.strftime("Asia/Tokyo: %A %d de %B del %Y - %H:%M"))  # %I 12h - %H 24h
 # Argentina/Buenos Aires: Thursday 29 de October del 2026 - 19:59
 # America/New York: Thursday 29 de October del 2026 - 18:59
 
-
+# TEST 05: Bien. (Posibles mejoras: 
+#                   Se podria hacer con algo para espaciado indicando la cantidad en vez de poner los espacios a mano.
+#                   Y se podria modularizar tambien.)
+#
+# Argentina/Buenos Aires: Thursday 29 de October del 2026 - 20:24
+# America/New York:       Thursday 29 de October del 2026 - 19:24
+# Asia/Tokyo:             Friday 30 de October del 2026 - 08:24
